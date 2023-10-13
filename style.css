@@ -7,6 +7,14 @@
     --bg-secondary: #141418;
     --transition-speed: 600ms;
   }
+
+  #gradient
+{
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
   
   body {
     color: rgb(92, 47, 47);
@@ -27,8 +35,8 @@
   }
   
   main {
-    margin-left: 5rem;
-    padding: 1rem;
+    /* margin-left: 5rem;
+    padding: 1rem; */
   }
   
   .navbar {
