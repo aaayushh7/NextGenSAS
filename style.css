@@ -14,10 +14,14 @@
   height: 100%;
   padding: 0px;
   margin: 0px;
+  z-index: -1;
+}
+.content{
+    margin-left: 85px;
 }
   
   body {
-    color: rgb(92, 47, 47);
+    color: rgb(249, 247, 247);
     background-color: rgb(249, 246, 246);
     margin: 0;
     padding: 0;
