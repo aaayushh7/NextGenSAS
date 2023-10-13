@@ -18,7 +18,7 @@
 }
 .content{
     margin-left: 85px;
-    /* height: 100%; */
+    height: 100%;
 }
 /* header{
     padding-top: 20px;
@@ -62,8 +62,55 @@ header {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 60px;
     max-width: 1200px;
-    margin: 20px auto;
+    margin: 70px auto;
 }
+article.featured{
+    grid-column: span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    border-bottom: 1px solid #bbc7c7;
+    padding-bottom: 40px;
+}
+
+
+article img, article.featured img{
+    width: 100%;
+    border: 4px solid #fff;
+    border-radius: 50%;
+}
+article p, article h3{
+    margin: 20px 10px;
+}
+/* responsiveness */
+@media screen and (max-width: 980px) {
+    article {
+        grid-column: span 3;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+    }
+    
+}
+
+@media screen and (max-width: 760px) {
+    article, article.featured {
+        display: block;
+        margin: 0 20px;
+    }
+    .content{
+        margin-left: 20px;
+        margin-right: 20px;
+        height: 100%;
+    }
+    
+    
+}
+
+
+
   body {
     color: rgb(249, 247, 247);
     background-color: rgb(249, 246, 246);
@@ -132,7 +179,7 @@ header {
 
 
 
-
+/* new css above */
   .navbar {
     position: fixed;
     background-color: var(--bg-primary);
