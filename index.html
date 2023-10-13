@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap" rel="stylesheet" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
     <script src="script.js"></script>
+    <script defer src="app.js"></script>
 </head>
 
 <body>
@@ -48,7 +49,7 @@
             </li>
 
             <li class="nav-item">
-                <a href="#" class="nav-link">
+                <a href="#aboutus" class="nav-link">
                     <svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="alien-monster" role="img"
                         xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"
                         class="svg-inline--fa fa-alien-monster fa-w-18 fa-9x">
@@ -149,25 +150,16 @@
                 <header>
                     <h1 class="animated-text">NextGen-AI</h1>
                 </header>
-                <div class="grid-container">
+                <div class="grid-container hidden">
                     <article class="featured">
-                        <img src="1.avif" alt="image-random">
+                        <img src="photos/1.avif" alt="image-random">
                         <div>
                             <h3>Guest?</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum, error adipisci
-                                ab odio alias, quis ducimus culpa porro minima quibusdam officia tenetur soluta iusto
-                                architecto. Voluptates id blanditiis officiis cum iure ut, rem, repellendus aperiam
-                                culpa tenetur minus exercitationem ex error. Quia eaque, libero porro blanditiis non
-                                dicta, dolorum sequi dignissimos aliquid quas hic cum ipsa suscipit, deserunt eos?
-                                Inventore laudantium laborum aperiam iste officiis incidunt blanditiis provident
-                                necessitatibus! Facilis minus quae odio itaque illo ipsam unde expedita debitis,
-                                sapiente sit, nam in, assumenda mollitia voluptates natus ea minima alias sint error
-                                quaerat praesentium dolores asperiores vitae! Porro, quidem!
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, similique qui nobis labore
-                                atque consequuntur praesentium iure temporibus facere iste aut. Placeat asperiores
-                                perspiciatis vitae adipisci magnam cum unde magni iste nemo tempora voluptas
-                                necessitatibus, officiis quo repellendus assumenda natus doloremque quisquam saepe
-                                soluta minus sint obcaecati alias iure! Magni.</p>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel quas excepturi praesentium
+                                temporibus a necessitatibus voluptas est eos vitae hic fuga nobis labore nihil
+                                repudiandae, aliquam iste magni tempora suscipit. Quae velit excepturi enim! Quidem
+                                cupiditate minima veniam numquam inventore, tempora vitae laudantium eum unde dolor
+                                optio ipsa ea natus!</p>
                         </div>
                     </article>
                 </div>
@@ -176,68 +168,68 @@
 
 
     </main>
-    <section class="about">
-		<h1>About Us</h1>
-		<p style="font-weight: bold">Next Gen AI</p>
-		<div class="about-info">
-			<div class="about-img">
-				<img src="photos/nextgenpic.jpeg">
-			</div>
-			<div>
-	<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum, error adipisci
-        ab odio alias, quis ducimus culpa porro minima quibusdam officia tenetur soluta iusto
-        architecto. Voluptates id blanditiis officiis cum iure ut, rem, repellendus aperiam
-        culpa tenetur minus exercitationem ex error. Quia eaque, libero porro blanditiis non
-        dicta, dolorum sequi dignissimos aliquid quas hic cum ipsa suscipit, deserunt eos?
-        Inventore laudantium laborum aperiam iste officiis incidunt blanditiis provident
-        necessitatibus! Facilis minus </p>
-			</div>
-		</div>
-	</section>
+    <section class="about hidden" id="aboutus">
+        <h1>About Us</h1>
+        <p style="font-weight: bold">Next Gen AI</p>
+        <div class="about-info">
+            <div class="about-img">
+                <img src="photos/nextgenpic.jpeg">
+            </div>
+            <div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus rerum, error adipisci
+                    ab odio alias, quis ducimus culpa porro minima quibusdam officia tenetur soluta iusto
+                    architecto. Voluptates id blanditiis officiis cum iure ut, rem, repellendus aperiam
+                    culpa tenetur minus exercitationem ex error. Quia eaque, libero porro blanditiis non
+                    dicta, dolorum sequi dignissimos aliquid quas hic cum ipsa suscipit, deserunt eos?
+                    Inventore laudantium laborum aperiam iste officiis incidunt blanditiis provident
+                    necessitatibus! Facilis minus </p>
+            </div>
+        </div>
+    </section>
 
-    <section class="team">
-		<h1>Meet Our Team</h1>
-		<div class="team-cards">
-			<!-- Cards here -->
-			<!-- Card 1 -->
-			<div class="card">
-				<div class="card-img">
-					<img src="" alt="User 1">
-				</div>
-				<div class="card-info">
-					<h2 class="card-name">Name</h2>
-					<p class="card-role">Designation</p>
-					<p class="card-email">email</p>
-					<p><button class="button">Contact</button></p>
-				</div>
-			</div>
+    <section class="team hidden">
+        <h1>Meet Our Team</h1>
+        <div class="team-cards">
+            <!-- Cards here -->
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="" alt="User 1">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Name</h2>
+                    <p class="card-role">Designation</p>
+                    <p class="card-email">email</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
 
-			<!-- Card 2 -->
-			<div class="card">
-				<div class="card-img">
-					<img src= "" alt="User 2">
-				</div>
-				<div class="card-info">
-					<h2 class="card-name">Name 1</h2>
-					<p class="card-role">Designation</p>
-					<p class="card-email">email</p>
-					<p><button class="button">Contact</button></p>
-				</div>
-			</div>
-			<!-- Card 3 -->
-			<div class="card">
-				<div class="card-img">
-					<img src="" alt="User 3">
-				</div>
-				<div class="card-info">
-					<h2 class="card-name">Name</h2>
-					<p class="card-role">Designation</p>
-					<p class="card-email">email</p>
-					<p><button class="button">Contact</button></p>
-				</div>
-			</div>
-		</div>
-	</section>
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="" alt="User 2">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Name 1</h2>
+                    <p class="card-role">Designation</p>
+                    <p class="card-email">email</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-img">
+                    <img src="" alt="User 3">
+                </div>
+                <div class="card-info">
+                    <h2 class="card-name">Name</h2>
+                    <p class="card-role">Designation</p>
+                    <p class="card-email">email</p>
+                    <p><button class="button">Contact</button></p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
         <p>footer note whatever</p>

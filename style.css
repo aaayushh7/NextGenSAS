@@ -8,6 +8,10 @@
     --transition-speed: 600ms;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   #gradient
 {
   width: 100%;
@@ -63,6 +67,7 @@ header {
     gap: 60px;
     max-width: 1200px;
     margin: 70px auto;
+    height: 100vh;
 }
 article.featured{
     grid-column: span 3;
@@ -76,7 +81,8 @@ article.featured{
 
 
 article img, article.featured img{
-    width: 100%;
+    width: 320px;
+    height: 320px;
     border: 4px solid #fff;
     border-radius: 50%;
 }
@@ -105,8 +111,27 @@ article p, article h3{
         margin-right: 20px;
         height: 100%;
     }
+    article img, article.featured img{
+        width: 290px;
+        height: 290px;
+        border: 4px solid #fff;
+        border-radius: 50%;
+        margin-left: 25px;
+    }
     
     
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(120px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
 }
 
 
@@ -185,6 +210,7 @@ article p, article h3{
     background-color: var(--bg-primary);
     transition: width 600ms ease;
     overflow: scroll;
+    z-index: 99;
   }
   
   .navbar-nav {
@@ -384,6 +410,8 @@ article p, article h3{
     background: linear-gradient(45deg, #1c2f5a, #373949);
     padding: 100px 0 20px 0;
     text-align: center;
+    height: 100vh;
+    
   }
   
   .about h1 {
@@ -555,7 +583,7 @@ article p, article h3{
     }
   
     .team {
-      margin: 0 1rem;
+      margin: 0 0rem;
     }
   }
   
